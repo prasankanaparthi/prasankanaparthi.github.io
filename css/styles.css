@@ -1,0 +1,94 @@
+:root {
+  --background: #F4F4F4;
+  --main: #1A3C6E;
+  --accent: #E8630A;
+  --text: #222222;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  margin: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--main);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: var(--text);
+}
+
+nav a {
+  display: block;
+  padding: 12px 16px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: var(--accent);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+main, aside {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h1, h2 {
+  color: var(--main);
+}
+
+header h1 {
+  color: white;
+  margin: 0;
+}
+
+a {
+  color: var(--accent);
+}
+
+footer {
+  background-color: var(--main);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+#clock {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+  }
+}
