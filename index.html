@@ -3,37 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prasan - Home</title>
+  <title>Prasan Kanaparthi - Business IT Student and Aspiring AI &amp; Data Professional</title>
+  <meta name="description" content="Portfolio of Prasan Kanaparthi, a Business Information Technology student at Haaga-Helia in Finland, interested in AI, data analytics and programming.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%23f97316'/%3E%3Ctext%20x='32'%20y='44'%20font-size='34'%20font-family='Arial'%20font-weight='700'%20text-anchor='middle'%20fill='%230f1420'%3EP%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>Prasan's Portfolio</h1>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="index.html">Prasan<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <main id="main" class="container">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <p class="eyebrow fade-up">Hello, I am</p>
+        <h1 id="hero-title" class="fade-up">Prasan Kanaparthi</h1>
+        <p class="headline fade-up delay-1">Business Information Technology Student | Aspiring AI &amp; Data Professional</p>
+        <p class="intro fade-up delay-1">I study Business Information Technology at Haaga-Helia University of Applied Sciences in Finland, and I am originally from Telangana, India. I am interested in how technology, data and business work together, and I am building practical skills through programming, data analytics and AI projects.</p>
+        <div class="button-row fade-up delay-2">
+          <a class="btn btn-primary" href="projects.html">View My Projects</a>
+          <a class="btn btn-outline" href="about.html">About Me</a>
+          <a class="btn btn-outline" href="contact.html">Contact Me</a>
+          <a class="btn btn-outline" href="contact.html#resume">Download Resume</a>
+        </div>
+      </div>
 
-  <div class="grid-container">
-    <main>
-      <h2>Welcome</h2>
-      <p>Hi, I am Prasan. This is my personal portfolio website.</p>
-      <p>Here you can learn about me, see my projects and find how to contact me.</p>
-    </main>
-    <aside>
-      <h2>Time now</h2>
-      <div id="clock"></div>
-    </aside>
-  </div>
+      <div class="hero-side fade-up delay-2">
+        <div class="photo" role="img" aria-label="Profile photo placeholder">PK</div>
+        <div class="clock-card">
+          <p>Time now</p>
+          <div id="clock">--:--:--</div>
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2026 Prasan</p>
+    <section class="section" aria-labelledby="focus-title">
+      <h2 id="focus-title">What I am working on</h2>
+      <p class="section-intro">I am a student who keeps learning and builds projects to prepare for my future career.</p>
+      <div class="card-grid">
+        <div class="card">
+          <span class="icon" aria-hidden="true">💻</span>
+          <h3>Programming</h3>
+          <p>Learning Python, Java, JavaScript and SQL, and using them in small projects.</p>
+        </div>
+        <div class="card">
+          <span class="icon" aria-hidden="true">📊</span>
+          <h3>Data analytics</h3>
+          <p>Exploring data with Pandas, NumPy, Excel and Tableau to find and share insights.</p>
+        </div>
+        <div class="card">
+          <span class="icon" aria-hidden="true">🤖</span>
+          <h3>AI and machine learning</h3>
+          <p>Trying out regression, classification and clustering with Scikit-learn.</p>
+        </div>
+        <div class="card">
+          <span class="icon" aria-hidden="true">🌐</span>
+          <h3>Web development</h3>
+          <p>Building websites with HTML, CSS and JavaScript, and learning Node.js and MongoDB.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Prasan Kanaparthi &middot; <a href="https://github.com/prasankanaparthi">GitHub</a></p>
+    </div>
   </footer>
 
   <script src="js/Clock.js"></script>
